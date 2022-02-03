@@ -9,6 +9,11 @@ app.use(cors());
 const port = process.env["PORT"] || 3000;
 
 const provider = new ethers.providers.CloudflareProvider();
+
+app.get("/", (req, res) => {
+  res.sendFile("index.html", { root: __dirname });
+});
+
 app.get("/:address", async (req, res) => {
   const address = req.params.address;
   res
