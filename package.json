@@ -1,0 +1,16 @@
+{
+  "name": "ens",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Kevin Wang <kevin@muxable.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ethers": "^5.5.4",
+    "express": "^4.17.2"
+  }
+}
